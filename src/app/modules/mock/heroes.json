@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "id": "059f7287-c555-443d-a066-330644dbbb12",
+      "name": "Hero 1",
+      "powers": ["power 1"]
+    },
+    {
+      "id": "f312d2ce-2bbc-4416-b81e-80f43f52c70d",
+      "name": "Hero 2",
+      "powers": ["power 2", "power 3"]
+    }
+  ]
+}
