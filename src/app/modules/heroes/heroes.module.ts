@@ -17,6 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientRepositoryService } from './infrastructure/repository/http-client-repository.service';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { HeroCreateComponent } from './ui/pages/hero-create/hero-create.component';
+import { MatChipsModule } from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { MatButtonModule } from '@angular/material/button';
     HeroSearcherComponent,
     HeroesTableComponent,
     HeroesListComponent,
+    HeroCreateComponent,
   ],
   imports: [
     CommonModule,
@@ -40,6 +43,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatTableModule,
     MatInputModule,
     MatButtonModule,
+    MatChipsModule,
   ],
   providers: [HttpClientRepositoryService, HttpClientModule],
 })
