@@ -8,6 +8,19 @@ The application provides the following features:
 - List, search, and filter superheroes
 - View detailed information about each superhero, including their powers
 
+### Hexagonal Architecture
+Hexagonal architecture is a software design pattern that focuses on the business logic and separates it from the infrastructure and presentation layers. This allows for a more modular and testable codebase, as well as a better separation of concerns.
+
+
+### Testing
+This project includes a suite of unit tests to ensure the quality and reliability of the application. The tests are written using the Jasmine framework and can be run using the Angular CLI.
+
+To run the tests, use the following commands:
+
+##### Run unit tests
+
+
+1. run `npm run test`
 
 ### Mock Backend
 
@@ -15,7 +28,9 @@ This project contains a mock backend using the **json-server** library. A mock b
 
 You can see the example information in **src\app\modules\mock\heroes.json**.
 
-The mock backend is automatically started when you run the `ng serve` command to start the Angular development server. However, if you want to start the mock backend server separately, you can use the following command: `npm run mock-server`
+The mock backend is automatically started when you run the `npm run start` or `npm run test`.
+
+However, if you want to start the mock backend server separately, you can use the following command: `npm run mock-server`
 
 
 ## Running the Application
@@ -23,7 +38,7 @@ To initialize the project, follow these steps:
 
 1. Clone the repository
 2. Install the dependencies by running `npm install`
-3. Start the development server by running `ng serve`
+3. Start the development server by running `npm run start`
 4. Open a web browser and navigate to http://localhost:4200
 
 ##### Prerequisites
