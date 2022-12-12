@@ -12,6 +12,11 @@ import { HeroesTableComponent } from './ui/components/heroes-table/heroes-table.
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
+import { HeroesListComponent } from './ui/pages/heroes-list/heroes-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientRepositoryService } from './infrastructure/repository/http-client-repository.service';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -19,6 +24,7 @@ import { MatTableModule } from '@angular/material/table';
     DialogDeleteHeroComponent,
     HeroSearcherComponent,
     HeroesTableComponent,
+    HeroesListComponent,
   ],
   imports: [
     CommonModule,
@@ -32,6 +38,9 @@ import { MatTableModule } from '@angular/material/table';
     MatPaginatorModule,
     MatIconModule,
     MatTableModule,
+    MatInputModule,
+    MatButtonModule,
   ],
+  providers: [HttpClientRepositoryService, HttpClientModule],
 })
 export class HeroesModule {}

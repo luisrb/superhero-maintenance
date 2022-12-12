@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="table-header">
+        <app-hero-searcher (search)="inputFilterChanges($event)"> </app-hero-searcher>
+        <a routerLink="./create" class="btn-new-hero">
+            <button mat-raised-button color="primary">
+                Crear nuevo Hero
+                <mat-icon>add_circle</mat-icon>
+            </button>
+        </a>
+    </div>
+    <div>
+        <app-heroes-table [heroes]="dataFiltered" (deleteHero)="openDialogDeleteHero($event)"></app-heroes-table>
+    </div>
+</div>
