@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "//": "first command is for the cmd.exe, second one is for the bash",
+    "start": "(start ng serve && start npm run mock-server) || (npm run ng serve & npm run mock-server)",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "(start ng test && start npm run mock-server) || (npm run ng test & npm run mock-server)",
+    "mock-server": "json-server --watch ./src/app/modules/mock/heroes.json --port 8000"
   },
   "private": true,
   "dependencies": {
