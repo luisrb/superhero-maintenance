@@ -1,0 +1,13 @@
+<div class="container">
+    <div mat-dialog-content>
+        <p>
+            ¿Estás seguro que deseas eliminar “<b>{{hero.name}}</b>”
+            del listado de superheroes?
+        </p>
+    </div>
+
+    <div mat-dialog-actions class="footer">
+        <button mat-button (click)="closeDialog()" tabindex="-1">Cancelar</button>
+        <button mat-button mat-raised-button color="warn" [mat-dialog-close]="hero" cdkFocusInitial>Borrar</button>
+    </div>
+</div>
