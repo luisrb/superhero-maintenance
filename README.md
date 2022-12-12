@@ -9,6 +9,15 @@ The application provides the following features:
 - View detailed information about each superhero, including their powers
 
 
+### Mock Backend
+
+This project contains a mock backend using the **json-server** library. A mock backend is a simulated API that allows you to test your frontend code without having to set up a real backend.
+
+You can see the example information in **src\app\modules\mock\heroes.json**.
+
+The mock backend is automatically started when you run the `ng serve` command to start the Angular development server. However, if you want to start the mock backend server separately, you can use the following command: `npm run mock-server`
+
+
 ## Running the Application
 To initialize the project, follow these steps:
 
@@ -23,6 +32,22 @@ Before you can initialize the project, you will need to have the following insta
 1. Node.js
 2. Angular CLI
 To install the Angular CLI, run `npm install -g @angular/cli`.
+
+### Running the Application with Docker
+
+This application can be run using Docker and Docker Compose. This allows you to run the Angular application in a container and the mock backend in another container.
+
+To initialize the project with Docker, follow these steps:
+
+1. Clone the repository
+2. Navigate to the project directory
+3. Run the application with Docker Compose `docker-compose up`
+4. Open a web browser and navigate to http://localhost:4200
+
+
+##### Prerequisites
+1. Docker
+
 
 
 ## Contributing
