@@ -1,0 +1,20 @@
+version: '3.3'
+name: superhero-maintenance-angular
+services:
+  angular-docker:
+    container_name: angular-docker-container
+    build:
+      dockerfile: ./front.Dockerfile
+    ports:
+      - '80:80'
+
+  mock:
+    container_name: mock-container
+    volumes:
+      - ./src/app/modules/mock/heroes.json:/data/heroes.json
+    build:
+      dockerfile: ./mock.Dockerfile
+    ports:
+      - '8000:8000'
+
+    command: json-server --watch ./heroes.json --host 0.0.0.0 --port 8000
