@@ -19,6 +19,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { HeroCreateComponent } from './ui/pages/hero-create/hero-create.component';
 import { MatChipsModule } from '@angular/material/chips';
+import { HeroEditComponent } from './ui/pages/hero-edit/hero-edit.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { MatChipsModule } from '@angular/material/chips';
     HeroesTableComponent,
     HeroesListComponent,
     HeroCreateComponent,
+    HeroEditComponent,
   ],
   imports: [
     CommonModule,
